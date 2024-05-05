@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #85a0e9;
+    padding-bottom: 20px;
+}
+
+.container {
+    max-width: 1144px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.logo img{
+height: 60%;
+width: 60%;
+display: flex;
+justify-content: center;
+margin-left: 210px;
+margin-bottom: 16px;
+}
+
+.chars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div filters {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    border: 15px;
+    gap: 20px;
+}
+
+.chars .filters .filter {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #0b4472;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Josefin Sans';
+    color: rgb(46, 49, 219)
+}
+
+main .chars .chars-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chars .chars-container .char {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.chars .chars-container .char img {
+    width: 260px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.chars-container .char .char-info {
+    font-family: 'Josefin Sans';
+    padding: 10px;
+    text-align: center;
+}
+
+.char .char-info span {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+button#load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #2196f3;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Josefin Sans';
+}
